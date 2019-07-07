@@ -21,12 +21,26 @@ class App extends React.Component {
         important: false,
         active: true,
         finishDate: null
+      },
+      {
+        id: 2,
+        text: "Srutututu Sratitati bulubulu",
+        date: "2020-08-01",
+        important: false,
+        active: true,
+        finishDate: null
       }
     ]
   };
 
   deleteTask = id => {
     console.log("delete elementu " + id);
+    const tasks = [...this.state.tasks];
+    console.log(tasks);
+
+    const index = tasks.findIndex(item => item.id === id);
+    tasks.splice(index, 1);
+    console.log(tasks);
   };
 
   changeTaskStatus = id => {
@@ -35,7 +49,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='App'>
+      <div className="App">
         ToDo lista
         <AddTask />
         <TaskList
