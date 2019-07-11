@@ -9,23 +9,39 @@ class App extends React.Component {
     tasks: [
       {
         id: 0,
-        text: "Srati tati",
+        text: "00000000000000000000000000000",
         date: "2020-07-15",
         important: true,
-        active: true,
+        active: false,
         finishDate: null
       },
       {
         id: 1,
-        text: "Srutututu",
+        text: "111111111111111111111111",
+        date: "2020-08-01",
+        important: false,
+        active: false,
+        finishDate: null
+      },
+      {
+        id: 2,
+        text: "22222222222222222222222222",
         date: "2020-08-01",
         important: false,
         active: true,
         finishDate: null
       },
       {
-        id: 2,
-        text: "Srutututu Sratitati bulubulu",
+        id: 3,
+        text: "333333333333333333333333",
+        date: "2020-08-01",
+        important: false,
+        active: true,
+        finishDate: null
+      },
+      {
+        id: 4,
+        text: "44444444444444444444444",
         date: "2020-08-01",
         important: false,
         active: true,
@@ -33,7 +49,7 @@ class App extends React.Component {
       },
       {
         id: 15,
-        text: "Srutututu Sratitati bulubulu tramtatamtam",
+        text: "15 15 15 15 15 15 15 15",
         date: "2020-08-01",
         important: false,
         active: true,
