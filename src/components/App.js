@@ -89,7 +89,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        ToDo lista
+        <h1>TO DO LIST</h1>
         <AddTask />
         <TaskList
           tasks={this.state.tasks}
