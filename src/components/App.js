@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import AddTask from "./AddTask";
 import TaskList from "./TaskList";
-import { format } from "url";
 
 class App extends React.Component {
   state = {
@@ -12,15 +11,15 @@ class App extends React.Component {
         text: "00000000000000000000000000000",
         date: "2020-07-15",
         important: true,
-        active: false,
+        active: true,
         finishDate: null
       },
       {
         id: 1,
         text: "111111111111111111111111",
         date: "2020-08-01",
-        important: false,
-        active: false,
+        important: true,
+        active: true,
         finishDate: null
       },
       {
@@ -35,7 +34,7 @@ class App extends React.Component {
         id: 3,
         text: "333333333333333333333333",
         date: "2020-08-01",
-        important: false,
+        important: true,
         active: true,
         finishDate: null
       },
