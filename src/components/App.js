@@ -9,7 +9,7 @@ class App extends React.Component {
     tasks: [
       {
         id: 0,
-        text: "00000000000000000000000000000",
+        text: "aaaaa",
         date: "2020-07-15",
         important: true,
         active: true,
@@ -17,7 +17,7 @@ class App extends React.Component {
       },
       {
         id: 1,
-        text: "111111111111111111111111",
+        text: "cccccccc",
         date: "2020-08-01",
         important: true,
         active: true,
@@ -25,7 +25,7 @@ class App extends React.Component {
       },
       {
         id: 2,
-        text: "22222222222222222222222222",
+        text: "bbbbbbbb",
         date: "2020-08-01",
         important: false,
         active: true,
@@ -33,7 +33,7 @@ class App extends React.Component {
       },
       {
         id: 3,
-        text: "333333333333333333333333",
+        text: "zzzzzzzzz",
         date: "2020-08-01",
         important: true,
         active: true,
