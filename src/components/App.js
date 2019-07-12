@@ -4,6 +4,7 @@ import AddTask from "./AddTask";
 import TaskList from "./TaskList";
 
 class App extends React.Component {
+  counter = 6;
   state = {
     tasks: [
       {
@@ -47,7 +48,7 @@ class App extends React.Component {
         finishDate: null
       },
       {
-        id: 15,
+        id: 5,
         text: "15 15 15 15 15 15 15 15",
         date: "2020-08-01",
         important: false,
@@ -86,11 +87,29 @@ class App extends React.Component {
     });
   };
 
+  addTask = (text, date, important) => {
+    console.log("dodany task");
+    const task = {
+      id: this.counter,
+      text: text,
+      date: date,
+      important: important,
+      active: true,
+      finishDate: null
+    };
+    this.counter++;
+    console.log(task, this.counter);
+    this.setState(prevState => ({
+      tasks: [...prevState.tasks, task]
+    }));
+    return true;
+  };
+
   render() {
     return (
       <div className='App'>
         <h1>TO DO LIST</h1>
-        <AddTask />
+        <AddTask add={this.addTask} />
         <TaskList
           tasks={this.state.tasks}
           delete={this.deleteTask}
